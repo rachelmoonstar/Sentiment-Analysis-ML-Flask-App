@@ -13,12 +13,9 @@ RUN cd $HOME && \
 RUN cd $HOME/Sentiment-Analysis-ML-Flask-App && \
 	pip3 install -r requirements.txt
 
-RUN python3 $HOME/Sentiment-Analysis-ML-Flask-App/app.py
-
-
 # expose ports
 EXPOSE 5002
 
 #Command
-CMD ["python3", "/Sentiment-Analysis-ML-Flask-App/app.py", "serve"]
+CMD ["python3", "~/Sentiment-Analysis-ML-Flask-App/app.py", "serve"]
 
