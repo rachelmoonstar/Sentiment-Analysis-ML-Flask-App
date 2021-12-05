@@ -41,4 +41,5 @@ def my_form_post():
 
 if __name__ == "__main__":
      #if "serve" in sys.argv: app.run(host='0.0.0.0', port=5002, debug=False)
-     app.run(debug=True, host="0.0.0.0", port=5002, threaded=True)
+     if "serve" in sys.argv:
+        app.run(debug=False, host="0.0.0.0", port=5002, threaded=True)
