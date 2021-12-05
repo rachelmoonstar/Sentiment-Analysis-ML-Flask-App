@@ -17,5 +17,5 @@ RUN cd $HOME/Sentiment-Analysis-ML-Flask-App && \
 EXPOSE 5002
 
 #Command
-CMD ["python3", "~/Sentiment-Analysis-ML-Flask-App/app.py", "serve"]
+CMD ["python3", "root/Sentiment-Analysis-ML-Flask-App/app.py", "serve"]
 
